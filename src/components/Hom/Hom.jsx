@@ -25,7 +25,7 @@ import main_card6 from "../../assets/card_img/Rectangle 8.png";
 import main_card_econ1 from "../../assets/card_img/akar-icons_github-fill.svg";
 import main_card_econ2 from "../../assets/card_img/akar-icons_link-chain.svg";
 import foter_img from "../../assets/foter_img/logo 1 (1).svg";
-
+import { IoMdMenu } from "react-icons/io";
 const Hom = () => {
   return (
     <>
@@ -47,6 +47,7 @@ const Hom = () => {
                 <img src={header_econ3} alt="get_hub.nan" />
                 <img src={header_econ1} alt="tewiter.nan" />
                 <img src={header_econ2} alt="lenkidin.nan" />
+                <IoMdMenu className="econ" />
               </ul>
             </div>
           </div>
