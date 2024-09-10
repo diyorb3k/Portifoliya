@@ -284,8 +284,10 @@ const Hom = () => {
               <img src={foter_img} alt="img_not" />
             </div>
             <div className="contackt">
+              <div className="number12">
               <p>+91 12345 09876</p>
               <p>info@example.com</p>
+              </div>
               <div className="img_foter">
                 <img src={header_econ3} alt="get_hub.nan" />
                 <img src={header_econ1} alt="tewiter.nan" />

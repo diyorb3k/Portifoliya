@@ -320,7 +320,11 @@ header {
     }
   }
 }
-
+.number12{
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
 
 
 
@@ -372,7 +376,9 @@ header {
 @media screen and (max-width:684px) {
   .contackt {
   display: flex;
+  flex-direction: column;
   gap: 5px;
+  align-items: center;
   flex-wrap: wrap;
 
   p {
@@ -394,7 +400,12 @@ header {
   gap: 20px;
 }
 } 
-
+.number12{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 22px;
+}
 }
 
 
