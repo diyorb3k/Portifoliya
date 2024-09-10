@@ -57,40 +57,6 @@ header {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // HERO
 .section1 {
   margin-top: 265px;
@@ -165,6 +131,9 @@ header {
     margin-bottom: 140px;
   }
 }
+
+
+
 .img_econ {
   display: flex;
   flex-wrap: wrap;
@@ -222,8 +191,6 @@ header {
 
   .img_econw {
     display: flex;
-    // align-items: center !important;
-    // margin-bottom: 25px;
     gap: 10px;
   }
 }
@@ -350,6 +317,178 @@ header {
     }
   }
 }
+
+
+
+
+
+// Main responsive
+@media screen and (max-width: 986px) {
+  .main_list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    span {
+      font-family: Poppins;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 26px;
+      text-align: center;
+      color: #42446e;
+    }
+    p {
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 36px;
+      text-align: center;
+      color: #666666;
+      margin-top: 29px;
+      margin-bottom: 90px;
+    }
+  }
+  .img_econ {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    gap: 70px;
+    margin-bottom: 214px;
+    align-items: center;
+    img{
+      max-width: 120px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // RESPONSEVI
 @media screen and (max-width: 961px) {
   header {
@@ -454,10 +593,8 @@ header {
   }
 }
 
-
-
 // Hero respiomsiv
- @media screen and (max-width:802px){
+@media screen and (max-width: 802px) {
   .section1 {
     margin-top: 100px;
     margin-bottom: 318px !important;
@@ -466,7 +603,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    img{
+    img {
       margin-top: 10px;
       margin-left: 30px;
     }
@@ -513,10 +650,9 @@ header {
       }
     }
   }
-  
- }
+}
 
- @media screen and (max-width:689px){
+@media screen and (max-width: 689px) {
   .section1 {
     margin-top: 100px;
     margin-bottom: 318px !important;
@@ -525,7 +661,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    img{
+    img {
       margin-top: 10px;
       margin-left: 30px;
     }
@@ -572,10 +708,9 @@ header {
       }
     }
   }
-  
- }
+}
 
- @media screen and (max-width:482px){
+@media screen and (max-width: 482px) {
   .section1 {
     margin-top: 100px;
     margin-bottom: 318px !important;
@@ -584,9 +719,10 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    img{
+    img {
       margin-top: 10px;
       margin-left: 10px;
+      padding-right: 20px;
     }
     .hero_tex {
       max-width: 636px;
@@ -624,10 +760,9 @@ header {
       }
     }
   }
-  
- }
+}
 
- @media screen and (max-width:409px){
+@media screen and (max-width: 418px) {
   .section1 {
     margin-top: 100px;
     margin-bottom: 318px !important;
@@ -636,12 +771,15 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    img{
+    img {
+      max-width: 349px;
       margin-top: 10px;
+      margin-left: 10px;
+      padding-right: 20px;
     }
     .hero_tex {
       max-width: 636px;
-      // margin-left: 10px;
+      margin-left: 15px;
       .spanhi {
         // padding-left: 130px;
         font-family: Poppins;
@@ -668,13 +806,13 @@ header {
       }
       .build {
         font-family: Poppins;
-        font-size: 30px;
+        font-size: 28px;
         letter-spacing: -1px;
         color: #42446e;
-        // padding-left: 0px;
-        // padding-right: 30px;
+        // padding-left: 40px;
       }
     }
   }
-  
- }
+}
+
+//  Main responsevi
