@@ -277,7 +277,7 @@ const Hom = () => {
           </div>
         </div>
       </main>
-      {/* <footer>
+      <footer>
         <div className="container">
           <div className="foterbilok">
             <div>
@@ -293,7 +293,7 @@ const Hom = () => {
               </div>
             </div>
           </div>
-          <div className="border_footer"></div>
+          {/* <div className="border_footer"></div>
           <div className="foterna">
             <div className="foter_navbar">
               <ul className="ul_nav">
@@ -307,9 +307,9 @@ const Hom = () => {
             <div className="foterright">
               <p>Designed and built by <span>Pavan MG</span> with <span>Love</span> &  <span>Coffee</span></p>
             </div>
-          </div>
+          </div> */}
         </div>
-      </footer> */}
+      </footer>
     </>
   );
 };

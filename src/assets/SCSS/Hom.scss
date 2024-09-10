@@ -169,13 +169,16 @@ header {
   }
 }
 .card_item {
+  margin: 0 auto;
   background-color: #fff;
   max-width: 370px;
+  width: 100%;
   border-radius: 20px;
   box-shadow: 2px 2px 100px 0px #00000033;
 
   img {
     max-width: 370px;
+    width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
     border-top-left-radius: 20px;
@@ -365,6 +368,34 @@ header {
 
 
 
+// FOTER responsive
+@media screen and (max-width:684px) {
+  .contackt {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+
+  p {
+    font-family: DM Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: left;
+    color: #42446e;
+  }
+  .foterbilok {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+.img_foter {
+  display: flex;
+  gap: 20px;
+}
+} 
+
+}
 
 
 
@@ -600,7 +631,7 @@ header {
 @media screen and (max-width: 802px) {
   .section1 {
     margin-top: 100px;
-    margin-bottom: 318px !important;
+    margin-bottom: 218px !important;
   }
   .hera {
     display: flex;
@@ -658,7 +689,7 @@ header {
 @media screen and (max-width: 689px) {
   .section1 {
     margin-top: 100px;
-    margin-bottom: 318px !important;
+    margin-bottom: 218px !important;
   }
   .hera {
     display: flex;
@@ -715,8 +746,8 @@ header {
 
 @media screen and (max-width: 482px) {
   .section1 {
-    margin-top: 100px;
-    margin-bottom: 318px !important;
+    margin-top: 90px;
+    margin-bottom: 100px !important;
   }
   .hera {
     display: flex;
