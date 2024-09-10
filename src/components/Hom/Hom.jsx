@@ -25,8 +25,15 @@ import main_card6 from "../../assets/card_img/Rectangle 8.png";
 import main_card_econ1 from "../../assets/card_img/akar-icons_github-fill.svg";
 import main_card_econ2 from "../../assets/card_img/akar-icons_link-chain.svg";
 import foter_img from "../../assets/foter_img/logo 1 (1).svg";
-import { IoMdMenu } from "react-icons/io";
+import { SlMenu } from "react-icons/sl";
+import { VscChromeClose } from "react-icons/vsc";
+
+import { useState } from "react";
 const Hom = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
   return (
     <>
       <header>
@@ -36,7 +43,7 @@ const Hom = () => {
               <img src={header_img} alt="" />
             </ul>
             <div className="navbar_right">
-              <ul className="ul_nav">
+              <ul className={`ul_nav ${menuOpen ? "show" : ""}`}>
                 <li>Hom</li>
                 <li>About</li>
                 <li>Tech Stack</li>
@@ -47,13 +54,31 @@ const Hom = () => {
                 <img src={header_econ3} alt="get_hub.nan" />
                 <img src={header_econ1} alt="tewiter.nan" />
                 <img src={header_econ2} alt="lenkidin.nan" />
-                <IoMdMenu className="econ" />
+                <span onClick={toggleMenu}>
+                  {menuOpen ? (
+                    <VscChromeClose
+                      style={{ width: "40px" }}
+                      className="econ"
+                    />
+                  ) : (
+                    <SlMenu style={{ width: "40px" }} className="econ" />
+                  )}
+                </span>
               </ul>
             </div>
           </div>
         </div>
       </header>
-      <section className="section1">
+      {menuOpen && (
+        <div className="menu">
+          <ul>
+            <li>Option </li>
+            <li>Option </li>
+            <li>Option </li>
+          </ul>
+        </div>
+      )}
+      {/* <section className="section1">
         <div className="container">
           <div className="hera">
             <div className="hero_tex">
@@ -284,7 +309,7 @@ const Hom = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 };

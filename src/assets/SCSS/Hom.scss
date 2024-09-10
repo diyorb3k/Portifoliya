@@ -268,8 +268,10 @@ header {
   color: #666666;
   margin-bottom: 53px;
 }
-.econ{
+.econ {
   display: none;
+  max-width: 105px;
+  height: 105px;
 }
 .foterna {
   display: flex;
@@ -326,7 +328,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  
+
     .navbar_right {
       display: flex;
       align-items: center;
@@ -349,31 +351,43 @@ header {
         display: flex;
         align-items: center;
         gap: 15px;
-  
+
         img {
           cursor: pointer;
         }
       }
     }
   }
-
-
 }
 
 @media screen and (max-width: 752px) {
   .navbar {
     display: flex;
     justify-content: space-between;
-  
+
     .navbar_right {
       display: flex;
       align-items: center;
       gap: 21px;
       .ul_nav {
-        display: flex;
+        position: absolute;
+        top: 105px;
+        left: 0;
+        width: 100%;
+        padding: 20px 0;
+        background: white;
+        flex-direction: column;
+        gap: 12px;
+        justify-content: center;
         align-items: center;
-        gap: 27px;
-        display: none;
+        transition: 0.3s ease;
+        z-index: 10;
+        transform-origin: top;
+        transform: scaleY(0);
+        line-height: 32px;
+        &.show {
+          transform: scaleY(1);
+        }
         li {
           font-family: DM Sans;
           font-size: 20px;
@@ -388,7 +402,7 @@ header {
         display: flex;
         align-items: center;
         gap: 15px;
-  
+
         img {
           cursor: pointer;
         }
@@ -396,7 +410,10 @@ header {
     }
   }
 
-  .econ{
+  .econ {
     display: block;
+    max-width: 105px;
+    height: 85px;
+    cursor: pointer;
   }
 }
