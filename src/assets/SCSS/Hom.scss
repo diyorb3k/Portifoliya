@@ -349,13 +349,16 @@ header {
   }
   .img_econ {
     display: flex;
+    margin-left: 100px;
     flex-wrap: wrap;
     margin: 0 auto;
+    justify-content: center;
     gap: 70px;
     margin-bottom: 214px;
     align-items: center;
     img{
       max-width: 120px;
+      width: 100%;
     }
   }
 }
