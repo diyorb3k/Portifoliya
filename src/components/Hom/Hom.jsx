@@ -78,7 +78,7 @@ const Hom = () => {
           </ul>
         </div>
       )}
-      {/* <section className="section1">
+      <section className="section1">
         <div className="container">
           <div className="hera">
             <div className="hero_tex">
@@ -277,7 +277,7 @@ const Hom = () => {
           </div>
         </div>
       </main>
-      <footer>
+      {/* <footer>
         <div className="container">
           <div className="foterbilok">
             <div>
